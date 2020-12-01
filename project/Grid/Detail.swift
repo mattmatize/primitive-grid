@@ -30,12 +30,12 @@ struct Detail: View {
                     }
                     Text("Rosetta Stone".uppercased()).font(.custom("MonumentExtended-Regular", size: 24))
                     Text("Granodiorite").font(.system(size: 24))
-                }.padding(24)
-              
+                }.padding(24).offset(y:-40)
+                Spacer()
             }
+            FAB().offset(y: -4)
             
-            
-        }
+        }.edgesIgnoringSafeArea(.all)
     }
 }
 
